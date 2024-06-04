@@ -1,0 +1,547 @@
+Namespace(GPU=True, batch_size=8, dataset='constructed_graph_data.npy', epoch_num=30, eta=0.85, fold_order=5, k_sample_val=8, lambda_reg=3e-05, lr=0.0003, n_classes=3, out_channels=10, results_dir='saved_model_interstellar5.pt')
+Graph construction started...
+Graph construction completed!
+current fold:  1
+current fold:  2
+current fold:  3
+current fold:  4
+current fold:  5
+current fold:  6
+current fold:  7
+current fold:  8
+current fold:  9
+current fold:  10
+The model is training on the 5-th fold.
+
+Init train/val/test splits... Done!
+Training on 263 samples
+Validating on 30 samples
+Init loss function... Done!
+Init Model... Setting tau to 1.0
+Done!
+Init optimizer ... Done!
+Init Loaders... Done!
+Training started...
+
+Epoch: 0:
+Training set:
+  tissue_scale_train_loss: 1.0580, cell_scale_train_loss:  1.3219
+  tissue-scale class 0: acc 0.44545454545454544, correct 49/110
+  tissue-scale class 1: acc 0.5901639344262295, correct 72/122
+  tissue-scale class 2: acc 0.3761467889908257, correct 41/109
+  cell-scale class 0 prediction accuracy 0.6935483870967742: correct 1892/2728
+  cell-scale class 1 prediction accuracy 0.530791788856305: correct 1448/2728
+
+Validation set:
+  tissue_scale_val_loss: 1.0212, cell_scale_val_loss: 0.9117
+  class 0: acc 0.7142857142857143, correct 5/7
+  class 1: acc 0.5, correct 2/4
+  class 2: acc 0.5263157894736842, correct 10/19
+  class 0 clustering acc 0.725: correct 174/240
+  class 1 clustering acc 0.7291666666666666: correct 175/240
+save model
+
+Epoch: 1:
+Training set:
+  tissue_scale_train_loss: 0.8577, cell_scale_train_loss:  0.8938
+  tissue-scale class 0: acc 0.7739130434782608, correct 89/115
+  tissue-scale class 1: acc 0.7117117117117117, correct 79/111
+  tissue-scale class 2: acc 0.4434782608695652, correct 51/115
+  cell-scale class 0 prediction accuracy 0.7690615835777126: correct 2098/2728
+  cell-scale class 1 prediction accuracy 0.7250733137829912: correct 1978/2728
+
+Validation set:
+  tissue_scale_val_loss: 0.8646, cell_scale_val_loss: 0.5044
+  class 0: acc 1.0, correct 7/7
+  class 1: acc 0.5, correct 2/4
+  class 2: acc 0.5263157894736842, correct 10/19
+  class 0 clustering acc 0.8583333333333333: correct 206/240
+  class 1 clustering acc 0.9333333333333333: correct 224/240
+save model
+
+Epoch: 2:
+Training set:
+  tissue_scale_train_loss: 0.7939, cell_scale_train_loss:  0.6247
+  tissue-scale class 0: acc 0.8055555555555556, correct 87/108
+  tissue-scale class 1: acc 0.7256637168141593, correct 82/113
+  tissue-scale class 2: acc 0.43333333333333335, correct 52/120
+  cell-scale class 0 prediction accuracy 0.8027859237536656: correct 2190/2728
+  cell-scale class 1 prediction accuracy 0.8925953079178885: correct 2435/2728
+
+Validation set:
+  tissue_scale_val_loss: 0.7681, cell_scale_val_loss: 0.4335
+  class 0: acc 1.0, correct 7/7
+  class 1: acc 0.5, correct 2/4
+  class 2: acc 0.6842105263157895, correct 13/19
+  class 0 clustering acc 0.9041666666666667: correct 217/240
+  class 1 clustering acc 0.925: correct 222/240
+save model
+
+Epoch: 3:
+Training set:
+  tissue_scale_train_loss: 0.6758, cell_scale_train_loss:  0.5252
+  tissue-scale class 0: acc 0.8557692307692307, correct 89/104
+  tissue-scale class 1: acc 0.8260869565217391, correct 95/115
+  tissue-scale class 2: acc 0.6065573770491803, correct 74/122
+  cell-scale class 0 prediction accuracy 0.8647360703812317: correct 2359/2728
+  cell-scale class 1 prediction accuracy 0.8969941348973607: correct 2447/2728
+
+Validation set:
+  tissue_scale_val_loss: 0.7600, cell_scale_val_loss: 0.3596
+  class 0: acc 1.0, correct 7/7
+  class 1: acc 0.5, correct 2/4
+  class 2: acc 0.5789473684210527, correct 11/19
+  class 0 clustering acc 0.9416666666666667: correct 226/240
+  class 1 clustering acc 0.9208333333333333: correct 221/240
+save model
+
+Epoch: 4:
+Training set:
+  tissue_scale_train_loss: 0.6432, cell_scale_train_loss:  0.4699
+  tissue-scale class 0: acc 0.9069767441860465, correct 117/129
+  tissue-scale class 1: acc 0.7628865979381443, correct 74/97
+  tissue-scale class 2: acc 0.6869565217391305, correct 79/115
+  cell-scale class 0 prediction accuracy 0.906891495601173: correct 2474/2728
+  cell-scale class 1 prediction accuracy 0.9167888563049853: correct 2501/2728
+
+Validation set:
+  tissue_scale_val_loss: 0.7323, cell_scale_val_loss: 0.3365
+  class 0: acc 1.0, correct 7/7
+  class 1: acc 0.5, correct 2/4
+  class 2: acc 0.5789473684210527, correct 11/19
+  class 0 clustering acc 0.9083333333333333: correct 218/240
+  class 1 clustering acc 0.9416666666666667: correct 226/240
+save model
+
+Epoch: 5:
+Training set:
+  tissue_scale_train_loss: 0.6023, cell_scale_train_loss:  0.4683
+  tissue-scale class 0: acc 0.9105691056910569, correct 112/123
+  tissue-scale class 1: acc 0.7796610169491526, correct 92/118
+  tissue-scale class 2: acc 0.64, correct 64/100
+  cell-scale class 0 prediction accuracy 0.8830645161290323: correct 2409/2728
+  cell-scale class 1 prediction accuracy 0.9420821114369502: correct 2570/2728
+
+Validation set:
+  tissue_scale_val_loss: 0.7250, cell_scale_val_loss: 0.3343
+  class 0: acc 1.0, correct 7/7
+  class 1: acc 0.5, correct 2/4
+  class 2: acc 0.6842105263157895, correct 13/19
+  class 0 clustering acc 0.9166666666666666: correct 220/240
+  class 1 clustering acc 0.9333333333333333: correct 224/240
+save model
+
+Epoch: 6:
+Training set:
+  tissue_scale_train_loss: 0.5455, cell_scale_train_loss:  0.4917
+  tissue-scale class 0: acc 0.8909090909090909, correct 98/110
+  tissue-scale class 1: acc 0.8688524590163934, correct 106/122
+  tissue-scale class 2: acc 0.6880733944954128, correct 75/109
+  cell-scale class 0 prediction accuracy 0.8889296187683284: correct 2425/2728
+  cell-scale class 1 prediction accuracy 0.9259530791788856: correct 2526/2728
+
+Validation set:
+  tissue_scale_val_loss: 0.6951, cell_scale_val_loss: 0.4324
+  class 0: acc 1.0, correct 7/7
+  class 1: acc 0.5, correct 2/4
+  class 2: acc 0.6842105263157895, correct 13/19
+  class 0 clustering acc 0.875: correct 210/240
+  class 1 clustering acc 0.9208333333333333: correct 221/240
+save model
+
+Epoch: 7:
+Training set:
+  tissue_scale_train_loss: 0.6050, cell_scale_train_loss:  0.4447
+  tissue-scale class 0: acc 0.8440366972477065, correct 92/109
+  tissue-scale class 1: acc 0.8195488721804511, correct 109/133
+  tissue-scale class 2: acc 0.696969696969697, correct 69/99
+  cell-scale class 0 prediction accuracy 0.8878299120234604: correct 2422/2728
+  cell-scale class 1 prediction accuracy 0.9347507331378299: correct 2550/2728
+
+Validation set:
+  tissue_scale_val_loss: 0.6441, cell_scale_val_loss: 0.4746
+  class 0: acc 1.0, correct 7/7
+  class 1: acc 0.5, correct 2/4
+  class 2: acc 0.7368421052631579, correct 14/19
+  class 0 clustering acc 0.8875: correct 213/240
+  class 1 clustering acc 0.9083333333333333: correct 218/240
+save model
+
+Epoch: 8:
+Training set:
+  tissue_scale_train_loss: 0.5302, cell_scale_train_loss:  0.4158
+  tissue-scale class 0: acc 0.839622641509434, correct 89/106
+  tissue-scale class 1: acc 0.8661417322834646, correct 110/127
+  tissue-scale class 2: acc 0.6388888888888888, correct 69/108
+  cell-scale class 0 prediction accuracy 0.9046920821114369: correct 2468/2728
+  cell-scale class 1 prediction accuracy 0.9241202346041055: correct 2521/2728
+
+Validation set:
+  tissue_scale_val_loss: 0.6302, cell_scale_val_loss: 0.4336
+  class 0: acc 1.0, correct 7/7
+  class 1: acc 0.5, correct 2/4
+  class 2: acc 0.7368421052631579, correct 14/19
+  class 0 clustering acc 0.925: correct 222/240
+  class 1 clustering acc 0.9208333333333333: correct 221/240
+save model
+
+Epoch: 9:
+Training set:
+  tissue_scale_train_loss: 0.5178, cell_scale_train_loss:  0.4124
+  tissue-scale class 0: acc 0.8760330578512396, correct 106/121
+  tissue-scale class 1: acc 0.8807339449541285, correct 96/109
+  tissue-scale class 2: acc 0.7027027027027027, correct 78/111
+  cell-scale class 0 prediction accuracy 0.9281524926686217: correct 2532/2728
+  cell-scale class 1 prediction accuracy 0.9046920821114369: correct 2468/2728
+
+Validation set:
+  tissue_scale_val_loss: 0.6344, cell_scale_val_loss: 0.3625
+  class 0: acc 1.0, correct 7/7
+  class 1: acc 0.5, correct 2/4
+  class 2: acc 0.6842105263157895, correct 13/19
+  class 0 clustering acc 0.9333333333333333: correct 224/240
+  class 1 clustering acc 0.925: correct 222/240
+
+Epoch: 10:
+Training set:
+  tissue_scale_train_loss: 0.5717, cell_scale_train_loss:  0.3629
+  tissue-scale class 0: acc 0.8951612903225806, correct 111/124
+  tissue-scale class 1: acc 0.8229166666666666, correct 79/96
+  tissue-scale class 2: acc 0.6942148760330579, correct 84/121
+  cell-scale class 0 prediction accuracy 0.9461143695014663: correct 2581/2728
+  cell-scale class 1 prediction accuracy 0.908357771260997: correct 2478/2728
+
+Validation set:
+  tissue_scale_val_loss: 0.5753, cell_scale_val_loss: 0.3269
+  class 0: acc 1.0, correct 7/7
+  class 1: acc 0.5, correct 2/4
+  class 2: acc 0.7894736842105263, correct 15/19
+  class 0 clustering acc 0.9375: correct 225/240
+  class 1 clustering acc 0.9166666666666666: correct 220/240
+save model
+
+Epoch: 11:
+Training set:
+  tissue_scale_train_loss: 0.4945, cell_scale_train_loss:  0.3311
+  tissue-scale class 0: acc 0.9017857142857143, correct 101/112
+  tissue-scale class 1: acc 0.8712121212121212, correct 115/132
+  tissue-scale class 2: acc 0.7835051546391752, correct 76/97
+  cell-scale class 0 prediction accuracy 0.9450146627565983: correct 2578/2728
+  cell-scale class 1 prediction accuracy 0.9347507331378299: correct 2550/2728
+
+Validation set:
+  tissue_scale_val_loss: 0.6336, cell_scale_val_loss: 0.3353
+  class 0: acc 1.0, correct 7/7
+  class 1: acc 0.5, correct 2/4
+  class 2: acc 0.7368421052631579, correct 14/19
+  class 0 clustering acc 0.9375: correct 225/240
+  class 1 clustering acc 0.9083333333333333: correct 218/240
+
+Epoch: 12:
+Training set:
+  tissue_scale_train_loss: 0.6080, cell_scale_train_loss:  0.2619
+  tissue-scale class 0: acc 0.8214285714285714, correct 92/112
+  tissue-scale class 1: acc 0.808695652173913, correct 93/115
+  tissue-scale class 2: acc 0.7280701754385965, correct 83/114
+  cell-scale class 0 prediction accuracy 0.9651759530791789: correct 2633/2728
+  cell-scale class 1 prediction accuracy 0.9593108504398827: correct 2617/2728
+
+Validation set:
+  tissue_scale_val_loss: 0.5541, cell_scale_val_loss: 0.3158
+  class 0: acc 1.0, correct 7/7
+  class 1: acc 0.5, correct 2/4
+  class 2: acc 0.8421052631578947, correct 16/19
+  class 0 clustering acc 0.9625: correct 231/240
+  class 1 clustering acc 0.9166666666666666: correct 220/240
+save model
+
+Epoch: 13:
+Training set:
+  tissue_scale_train_loss: 0.5072, cell_scale_train_loss:  0.2734
+  tissue-scale class 0: acc 0.8596491228070176, correct 98/114
+  tissue-scale class 1: acc 0.8416666666666667, correct 101/120
+  tissue-scale class 2: acc 0.7476635514018691, correct 80/107
+  cell-scale class 0 prediction accuracy 0.9644428152492669: correct 2631/2728
+  cell-scale class 1 prediction accuracy 0.9424486803519062: correct 2571/2728
+
+Validation set:
+  tissue_scale_val_loss: 0.5687, cell_scale_val_loss: 0.2947
+  class 0: acc 1.0, correct 7/7
+  class 1: acc 0.5, correct 2/4
+  class 2: acc 0.7894736842105263, correct 15/19
+  class 0 clustering acc 0.9708333333333333: correct 233/240
+  class 1 clustering acc 0.9208333333333333: correct 221/240
+
+Epoch: 14:
+Training set:
+  tissue_scale_train_loss: 0.5108, cell_scale_train_loss:  0.2611
+  tissue-scale class 0: acc 0.8347107438016529, correct 101/121
+  tissue-scale class 1: acc 0.8859649122807017, correct 101/114
+  tissue-scale class 2: acc 0.8018867924528302, correct 85/106
+  cell-scale class 0 prediction accuracy 0.9600439882697948: correct 2619/2728
+  cell-scale class 1 prediction accuracy 0.9659090909090909: correct 2635/2728
+
+Validation set:
+  tissue_scale_val_loss: 0.5805, cell_scale_val_loss: 0.2678
+  class 0: acc 1.0, correct 7/7
+  class 1: acc 0.5, correct 2/4
+  class 2: acc 0.7368421052631579, correct 14/19
+  class 0 clustering acc 0.9708333333333333: correct 233/240
+  class 1 clustering acc 0.9166666666666666: correct 220/240
+
+Epoch: 15:
+Training set:
+  tissue_scale_train_loss: 0.4368, cell_scale_train_loss:  0.2648
+  tissue-scale class 0: acc 0.9423076923076923, correct 98/104
+  tissue-scale class 1: acc 0.8951612903225806, correct 111/124
+  tissue-scale class 2: acc 0.7433628318584071, correct 84/113
+  cell-scale class 0 prediction accuracy 0.9611436950146628: correct 2622/2728
+  cell-scale class 1 prediction accuracy 0.9398826979472141: correct 2564/2728
+
+Validation set:
+  tissue_scale_val_loss: 0.5916, cell_scale_val_loss: 0.2201
+  class 0: acc 1.0, correct 7/7
+  class 1: acc 0.5, correct 2/4
+  class 2: acc 0.7894736842105263, correct 15/19
+  class 0 clustering acc 0.9791666666666666: correct 235/240
+  class 1 clustering acc 0.9583333333333334: correct 230/240
+
+Epoch: 16:
+Training set:
+  tissue_scale_train_loss: 0.4540, cell_scale_train_loss:  0.2364
+  tissue-scale class 0: acc 0.8706896551724138, correct 101/116
+  tissue-scale class 1: acc 0.8796296296296297, correct 95/108
+  tissue-scale class 2: acc 0.7692307692307693, correct 90/117
+  cell-scale class 0 prediction accuracy 0.9732404692082112: correct 2655/2728
+  cell-scale class 1 prediction accuracy 0.9611436950146628: correct 2622/2728
+
+Validation set:
+  tissue_scale_val_loss: 0.5168, cell_scale_val_loss: 0.1839
+  class 0: acc 1.0, correct 7/7
+  class 1: acc 0.5, correct 2/4
+  class 2: acc 0.8421052631578947, correct 16/19
+  class 0 clustering acc 0.9916666666666667: correct 238/240
+  class 1 clustering acc 0.9666666666666667: correct 232/240
+save model
+
+Epoch: 17:
+Training set:
+  tissue_scale_train_loss: 0.4178, cell_scale_train_loss:  0.2307
+  tissue-scale class 0: acc 0.9090909090909091, correct 110/121
+  tissue-scale class 1: acc 0.9, correct 108/120
+  tissue-scale class 2: acc 0.78, correct 78/100
+  cell-scale class 0 prediction accuracy 0.9732404692082112: correct 2655/2728
+  cell-scale class 1 prediction accuracy 0.9406158357771262: correct 2566/2728
+
+Validation set:
+  tissue_scale_val_loss: 0.5580, cell_scale_val_loss: 0.1611
+  class 0: acc 1.0, correct 7/7
+  class 1: acc 0.5, correct 2/4
+  class 2: acc 0.7368421052631579, correct 14/19
+  class 0 clustering acc 1.0: correct 240/240
+  class 1 clustering acc 0.9666666666666667: correct 232/240
+
+Epoch: 18:
+Training set:
+  tissue_scale_train_loss: 0.4504, cell_scale_train_loss:  0.2208
+  tissue-scale class 0: acc 0.9166666666666666, correct 99/108
+  tissue-scale class 1: acc 0.8666666666666667, correct 104/120
+  tissue-scale class 2: acc 0.7345132743362832, correct 83/113
+  cell-scale class 0 prediction accuracy 0.9721407624633431: correct 2652/2728
+  cell-scale class 1 prediction accuracy 0.9549120234604106: correct 2605/2728
+
+Validation set:
+  tissue_scale_val_loss: 0.5401, cell_scale_val_loss: 0.1411
+  class 0: acc 1.0, correct 7/7
+  class 1: acc 0.5, correct 2/4
+  class 2: acc 0.7368421052631579, correct 14/19
+  class 0 clustering acc 1.0: correct 240/240
+  class 1 clustering acc 0.9708333333333333: correct 233/240
+
+Epoch: 19:
+Training set:
+  tissue_scale_train_loss: 0.3921, cell_scale_train_loss:  0.1953
+  tissue-scale class 0: acc 0.9186991869918699, correct 113/123
+  tissue-scale class 1: acc 0.8512396694214877, correct 103/121
+  tissue-scale class 2: acc 0.845360824742268, correct 82/97
+  cell-scale class 0 prediction accuracy 0.9765395894428153: correct 2664/2728
+  cell-scale class 1 prediction accuracy 0.967741935483871: correct 2640/2728
+
+Validation set:
+  tissue_scale_val_loss: 0.5640, cell_scale_val_loss: 0.1338
+  class 0: acc 1.0, correct 7/7
+  class 1: acc 0.5, correct 2/4
+  class 2: acc 0.6842105263157895, correct 13/19
+  class 0 clustering acc 1.0: correct 240/240
+  class 1 clustering acc 0.975: correct 234/240
+
+Epoch: 20:
+Training set:
+  tissue_scale_train_loss: 0.3886, cell_scale_train_loss:  0.2150
+  tissue-scale class 0: acc 0.8547008547008547, correct 100/117
+  tissue-scale class 1: acc 0.911504424778761, correct 103/113
+  tissue-scale class 2: acc 0.7927927927927928, correct 88/111
+  cell-scale class 0 prediction accuracy 0.9626099706744868: correct 2626/2728
+  cell-scale class 1 prediction accuracy 0.9659090909090909: correct 2635/2728
+
+Validation set:
+  tissue_scale_val_loss: 0.6291, cell_scale_val_loss: 0.1439
+  class 0: acc 1.0, correct 7/7
+  class 1: acc 0.5, correct 2/4
+  class 2: acc 0.6842105263157895, correct 13/19
+  class 0 clustering acc 1.0: correct 240/240
+  class 1 clustering acc 0.9958333333333333: correct 239/240
+
+Epoch: 21:
+Training set:
+  tissue_scale_train_loss: 0.4171, cell_scale_train_loss:  0.1871
+  tissue-scale class 0: acc 0.8918918918918919, correct 99/111
+  tissue-scale class 1: acc 0.9173553719008265, correct 111/121
+  tissue-scale class 2: acc 0.7614678899082569, correct 83/109
+  cell-scale class 0 prediction accuracy 0.9820381231671554: correct 2679/2728
+  cell-scale class 1 prediction accuracy 0.9659090909090909: correct 2635/2728
+
+Validation set:
+  tissue_scale_val_loss: 0.6118, cell_scale_val_loss: 0.1173
+  class 0: acc 1.0, correct 7/7
+  class 1: acc 0.5, correct 2/4
+  class 2: acc 0.7368421052631579, correct 14/19
+  class 0 clustering acc 1.0: correct 240/240
+  class 1 clustering acc 0.9958333333333333: correct 239/240
+
+Epoch: 22:
+Training set:
+  tissue_scale_train_loss: 0.3955, cell_scale_train_loss:  0.1527
+  tissue-scale class 0: acc 0.9026548672566371, correct 102/113
+  tissue-scale class 1: acc 0.905982905982906, correct 106/117
+  tissue-scale class 2: acc 0.8468468468468469, correct 94/111
+  cell-scale class 0 prediction accuracy 0.9849706744868035: correct 2687/2728
+  cell-scale class 1 prediction accuracy 0.9545454545454546: correct 2604/2728
+
+Validation set:
+  tissue_scale_val_loss: 0.5882, cell_scale_val_loss: 0.1041
+  class 0: acc 1.0, correct 7/7
+  class 1: acc 0.5, correct 2/4
+  class 2: acc 0.7894736842105263, correct 15/19
+  class 0 clustering acc 1.0: correct 240/240
+  class 1 clustering acc 0.9958333333333333: correct 239/240
+
+Epoch: 23:
+Training set:
+  tissue_scale_train_loss: 0.4260, cell_scale_train_loss:  0.1449
+  tissue-scale class 0: acc 0.8476190476190476, correct 89/105
+  tissue-scale class 1: acc 0.8803418803418803, correct 103/117
+  tissue-scale class 2: acc 0.8151260504201681, correct 97/119
+  cell-scale class 0 prediction accuracy 0.9923020527859238: correct 2707/2728
+  cell-scale class 1 prediction accuracy 0.9567448680351907: correct 2610/2728
+
+Validation set:
+  tissue_scale_val_loss: 0.5891, cell_scale_val_loss: 0.0959
+  class 0: acc 1.0, correct 7/7
+  class 1: acc 0.5, correct 2/4
+  class 2: acc 0.7894736842105263, correct 15/19
+  class 0 clustering acc 1.0: correct 240/240
+  class 1 clustering acc 0.9916666666666667: correct 238/240
+
+Epoch: 24:
+Training set:
+  tissue_scale_train_loss: 0.3824, cell_scale_train_loss:  0.1502
+  tissue-scale class 0: acc 0.9327731092436975, correct 111/119
+  tissue-scale class 1: acc 0.911504424778761, correct 103/113
+  tissue-scale class 2: acc 0.8440366972477065, correct 92/109
+  cell-scale class 0 prediction accuracy 0.9831378299120235: correct 2682/2728
+  cell-scale class 1 prediction accuracy 0.968841642228739: correct 2643/2728
+
+Validation set:
+  tissue_scale_val_loss: 0.6179, cell_scale_val_loss: 0.0900
+  class 0: acc 1.0, correct 7/7
+  class 1: acc 0.5, correct 2/4
+  class 2: acc 0.7368421052631579, correct 14/19
+  class 0 clustering acc 1.0: correct 240/240
+  class 1 clustering acc 0.9958333333333333: correct 239/240
+
+Epoch: 25:
+Training set:
+  tissue_scale_train_loss: 0.4168, cell_scale_train_loss:  0.1520
+  tissue-scale class 0: acc 0.8962264150943396, correct 95/106
+  tissue-scale class 1: acc 0.8878504672897196, correct 95/107
+  tissue-scale class 2: acc 0.828125, correct 106/128
+  cell-scale class 0 prediction accuracy 0.9849706744868035: correct 2687/2728
+  cell-scale class 1 prediction accuracy 0.9615102639296188: correct 2623/2728
+
+Validation set:
+  tissue_scale_val_loss: 0.5631, cell_scale_val_loss: 0.0843
+  class 0: acc 1.0, correct 7/7
+  class 1: acc 0.5, correct 2/4
+  class 2: acc 0.8947368421052632, correct 17/19
+  class 0 clustering acc 1.0: correct 240/240
+  class 1 clustering acc 0.9875: correct 237/240
+
+Epoch: 26:
+Training set:
+  tissue_scale_train_loss: 0.3443, cell_scale_train_loss:  0.1418
+  tissue-scale class 0: acc 0.921875, correct 118/128
+  tissue-scale class 1: acc 0.8508771929824561, correct 97/114
+  tissue-scale class 2: acc 0.8181818181818182, correct 81/99
+  cell-scale class 0 prediction accuracy 0.9897360703812317: correct 2700/2728
+  cell-scale class 1 prediction accuracy 0.9633431085043989: correct 2628/2728
+
+Validation set:
+  tissue_scale_val_loss: 0.6352, cell_scale_val_loss: 0.0792
+  class 0: acc 1.0, correct 7/7
+  class 1: acc 0.5, correct 2/4
+  class 2: acc 0.7368421052631579, correct 14/19
+  class 0 clustering acc 1.0: correct 240/240
+  class 1 clustering acc 0.9875: correct 237/240
+
+Epoch: 27:
+Training set:
+  tissue_scale_train_loss: 0.3799, cell_scale_train_loss:  0.1459
+  tissue-scale class 0: acc 0.9117647058823529, correct 93/102
+  tissue-scale class 1: acc 0.8909090909090909, correct 98/110
+  tissue-scale class 2: acc 0.7906976744186046, correct 102/129
+  cell-scale class 0 prediction accuracy 0.9827712609970675: correct 2681/2728
+  cell-scale class 1 prediction accuracy 0.9787390029325513: correct 2670/2728
+
+Validation set:
+  tissue_scale_val_loss: 0.5846, cell_scale_val_loss: 0.0705
+  class 0: acc 0.8571428571428571, correct 6/7
+  class 1: acc 0.5, correct 2/4
+  class 2: acc 0.8947368421052632, correct 17/19
+  class 0 clustering acc 1.0: correct 240/240
+  class 1 clustering acc 0.9916666666666667: correct 238/240
+
+Epoch: 28:
+Training set:
+  tissue_scale_train_loss: 0.3480, cell_scale_train_loss:  0.1109
+  tissue-scale class 0: acc 0.9333333333333333, correct 98/105
+  tissue-scale class 1: acc 0.9072164948453608, correct 88/97
+  tissue-scale class 2: acc 0.8561151079136691, correct 119/139
+  cell-scale class 0 prediction accuracy 0.9897360703812317: correct 2700/2728
+  cell-scale class 1 prediction accuracy 0.9732404692082112: correct 2655/2728
+
+Validation set:
+  tissue_scale_val_loss: 0.5514, cell_scale_val_loss: 0.0703
+  class 0: acc 1.0, correct 7/7
+  class 1: acc 0.5, correct 2/4
+  class 2: acc 0.8947368421052632, correct 17/19
+  class 0 clustering acc 1.0: correct 240/240
+  class 1 clustering acc 0.9916666666666667: correct 238/240
+
+Epoch: 29:
+Training set:
+  tissue_scale_train_loss: 0.3519, cell_scale_train_loss:  0.1090
+  tissue-scale class 0: acc 0.9173553719008265, correct 111/121
+  tissue-scale class 1: acc 0.8771929824561403, correct 100/114
+  tissue-scale class 2: acc 0.8867924528301887, correct 94/106
+  cell-scale class 0 prediction accuracy 0.9941348973607038: correct 2712/2728
+  cell-scale class 1 prediction accuracy 0.9761730205278593: correct 2663/2728
+
+Validation set:
+  tissue_scale_val_loss: 0.5507, cell_scale_val_loss: 0.0671
+  class 0: acc 1.0, correct 7/7
+  class 1: acc 0.5, correct 2/4
+  class 2: acc 0.8421052631578947, correct 16/19
+  class 0 clustering acc 1.0: correct 240/240
+  class 1 clustering acc 0.9916666666666667: correct 238/240
+Training completed!
